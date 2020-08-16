@@ -1,5 +1,4 @@
-// C++ program for implementation of FCFS 
-// scheduling 
+// Class Scheduling using FCFS algoithm - OS TERM PROJECT PROGRAMMING ASSIGNMENT 
 #include<bits/stdc++.h> 
 using namespace std; 
 
