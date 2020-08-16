@@ -1,3 +1,5 @@
+// Class Scheduling using FCFS algoithm - OS TERM PROJECT PROGRAMMING ASSIGNMENT 
+
 #include<iostream> 
 using namespace std; 
 int mat[10][6]; 
