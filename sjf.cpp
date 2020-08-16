@@ -64,18 +64,9 @@ int main()
 	int mat[10][6] = {{2201,1,3,},{3401,2,2},{1103,3,1}}; 
 
 	
-
-	
-	cout<<"Before Arrange...\n"; 
-	cout<<"Process ID\tArrival Time\tBurst Time\n"; 
-	for(int i=0; i<3; i++) 
-	{ 
-		cout<<mat[i][0]<<"\t\t"<<mat[i][1]<<"\t\t"<<mat[i][2]<<"\n"; 
-	} 
-	
 	arrangeArrival(num, mat); 
 	completionTime(num, mat); 
-	cout<<"Final Result...\n"; 
+	cout<<"Class Scheduling using Shortest Job First Algorithm(SJF)\n"; 
 	cout<<"Process ID\tArrival Time\tBurst Time\tWaiting Time\tTurnaround Time\n"; 
 	int total_wt = 0, total_tat = 0; 
 	for(int i=0; i<3; i++) 
