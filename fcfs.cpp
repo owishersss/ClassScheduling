@@ -4,6 +4,8 @@ of FCFS scheduling */
 #include<iostream>
 
 using namespace std;
+
+
  
 // function to find the waiting time for all processes
 void findWaitingTime(int processes[], int n, int bt[], int wt[])
@@ -48,7 +50,7 @@ void findAverageTime( int processes[], int n, int bt[])
     {
         total_wt = total_wt + wt[i];
         total_tat = total_tat + tat[i];
-        cout << "   " << i+1 << "\t\t" << bt[i] <<"\t    "<< wt[i] <<"\t\t  " << tat[i] <<endl;
+        cout << "   " << processes[i] << "\t\t" << bt[i] <<"\t    "<< wt[i] <<"\t\t  " << tat[i] <<endl;
     }
  
     cout << "Average waiting time = "<< (float)total_wt / (float)n;
@@ -59,11 +61,11 @@ void findAverageTime( int processes[], int n, int bt[])
 int main()
 {
     // process ids
-    int processes[] = { 1, 2, 3, 4};
+    int processes[] = {2201,3401,1103};
     int n = sizeof processes / sizeof processes[0];
  
     // burst time of all processes
-    int  burst_time[] = {21, 3, 6, 2};
+    int  burst_time[] = {3,2,1};
  
     findAverageTime(processes, n,  burst_time);
     
